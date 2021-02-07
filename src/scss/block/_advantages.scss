@@ -1,0 +1,60 @@
+.advantages {
+    min-height: 472px;
+    padding: 69px 0 81px 0;
+    background-color: #f6f6f6;
+    &__wrapper {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 238px;
+    
+    }
+    &__header {
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0d0d0d;
+    }
+    &__subheader {
+        margin-top: 25px;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0d0d0d;
+        a {
+            color: $main_color;
+        }
+    }
+    /* Делаю анимацию сердцебиения */
+    &__icon {
+        &_animated {
+            animation: heartbeat 2s ease infinite;
+            // animation-name: heartbeat;
+            // animation-duration: 2s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+        }
+        &_swing {
+            animation: swing 4s ease-in-out infinite;
+        }
+        &_shake {
+            animation: shake 4s ease infinite;
+        }
+    }
+}
